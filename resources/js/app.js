@@ -1,6 +1,6 @@
 import './bootstrap';
 
-Echo.channel('notifications')
+Echo.private('notifications')
     .listen('UserSessionChanged',(e) =>{
         console.log('hi');
         let notificationElement = document.getElementById('notification')
